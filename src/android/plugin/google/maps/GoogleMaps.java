@@ -2148,7 +2148,7 @@ public class GoogleMaps extends CordovaPlugin implements View.OnClickListener, O
     windowLayer = null;
     mapDivLayoutJSON = null;
     System.gc();
-    this.sendNoResult(callbackContext);
+    callbackContext.success();
   }
 
   protected void sendNoResult(CallbackContext callbackContext) {
